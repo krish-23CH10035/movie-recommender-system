@@ -8,9 +8,12 @@ import time
 @st.cache_data
 def fetch_poster(movie_id):
     url = f"https://api.themoviedb.org/3/movie/{movie_id}?language=en-US"
+    # Get the API key from Streamlit Secrets
+    api_key = st.secrets["tmdb_api_key"]
+
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0MmE4Mjg1OTQ0YmIxZDM0ZTIzODE4YzRlMzY3ZTVmZCIsIm5iZiI6MTc2MTIyMTIwOC42MDA5OTk4LCJzdWIiOiI2OGZhMWE1ODdlNDFlNDkwNmNmMjlkMGYiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.N1obZWVTLxURBDUZUCfAkaxJZVE8-_vflwmcoSyeKjY"
+        "Authorization": f"Bearer {api_key}"
     }
 
     for attempt in range(3):  # ✅ Retry up to 3 times
