@@ -3,6 +3,14 @@ import streamlit as st
 import pandas as pd
 import requests
 import time
+import os
+import gdown
+
+if not os.path.exists("similarity.pkl"):
+    print("Downloading similarity.pkl...")
+    url = "https://drive.google.com/uc?id=1WxUdsXE3eooVYuyg0VoxWQx8OskDZbPJ"
+    gdown.download(url, "similarity.pkl", quiet=False)
+
 
 # ✅ Cache API responses to reduce TMDB requests
 @st.cache_data
