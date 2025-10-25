@@ -39,3 +39,63 @@ An AI-powered **Movie Recommender System** that suggests similar movies based on
 
 ## 🗂️ Project Structure
 
+📁 movie-recommender-system/
+├── app.py # Streamlit main app
+├── movie_dict.pkl # Movie dictionary data
+├── similarity.pkl.gz # Compressed similarity matrix
+├── requirements.txt # Dependencies
+├── README.md # Project documentation
+└── .streamlit/
+└── secrets.toml # Contains TMDB API key
+
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/<your-username>/movie-recommender-system.git
+cd movie-recommender-system
+
+
+2️⃣ Install dependencies
+pip install -r requirements.txt
+
+3️⃣ Add your TMDB API key
+
+Create a file named .streamlit/secrets.toml:
+
+tmdb_api_key = "YOUR_TMDB_API_KEY"
+
+4️⃣ Run the app
+streamlit run app.py
+
+🌍 Deployment (Render)
+
+This app is deployed on Render.
+Steps to deploy:
+
+Push your code to GitHub.
+
+Create a new Web Service on Render.
+
+Connect your GitHub repo.
+
+Add an environment variable TMDB_API_KEY in Render Dashboard → Environment tab.
+
+Deploy and enjoy your app live!
+
+
+| Movie Selection                                                    | Recommended Movies                                                  |
+| Man of Steel | Superman Returns, Superman Returns
+0
+Superman II
+0
+X-Men: First Class
+0
+Ong Bak 2
+0
+Jupiter Ascending
+0 
