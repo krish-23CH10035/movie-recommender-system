@@ -86,11 +86,3 @@ Connect your GitHub repo.
 Add an environment variable TMDB_API_KEY in Render Dashboard → Environment tab.
 
 Deploy and enjoy your app live!
-
-
-| Movie Selection                                                    | Recommended Movies|
-| Man of Steel | <img width="934" height="332" alt="image" src="https://github.com/user-attachments/assets/e6767f2a-4a3f-48fd-add5-996cc75d6873" />
-
-
-Jupiter Ascending
-0 
