@@ -54,7 +54,7 @@ An AI-powered **Movie Recommender System** that suggests similar movies based on
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Clone the repository
+1️⃣ Clone the repository
 ```bash
 git clone https://github.com/<your-username>/movie-recommender-system.git
 cd movie-recommender-system
