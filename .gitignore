@@ -6,4 +6,7 @@ venv/
 
 # PyCharm
 .idea/
+*.pkl
+
+
 
